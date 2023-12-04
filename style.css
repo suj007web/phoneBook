@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu';
+}
+
+body{
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background: linear-gradient(#7071E8,#ED9ED6);
+}
+
+.container{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    
+
+}
+
+
+.head{
+    font-family: 'Pacifico';
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    font-size: 4rem;
+}
+form{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+input{
+    width: 30%;
+    background-color: rgb(255, 255, 255 , 0.1);
+    color: white;
+}
+::placeholder{
+    color: white;
+}
+input, button{
+    padding: 0.7rem;
+    border: none;
+    border-radius: 5px;
+    margin: 0.5rem;
+    outline: none;
+
+}
+
+form>button{
+    background-color: black;
+    color: white;
+    
+    transition: all 0.3s ease-in-out;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+form>button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.contactContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.contact{
+    width: 80%;
+    display: flex;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    align-items: center ;
+    background-color: rgba(255, 255, 255, 0.164);
+    color: white;
+    margin-bottom: 1rem;
+
+}
+.contact>div{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+ 
+    
+}
+.contact>.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 0rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: rgb(247, 118, 118);
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    
+}
+span{
+    color: rgba(255, 255, 255, 0.719);
+    font-size: 0.8rem;
+}
+
+@media only screen and (max-width : 600px){
+    input{
+        width: 50%;
+    }
+    .contact>.btn{
+       height: 2.3rem;
+    }
+}
